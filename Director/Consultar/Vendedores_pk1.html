@@ -78,18 +78,24 @@
             <h1>Cotizaciones asociadas</h1>
         </div>
     </div>
+
     <div class="container">
-        <div class="row pull-left" style="margin-bottom: 5px;">
-            <label class="control-label col-sm-6" for="sel_Estado">Mostrar:</label>
-            <div class="col-sm-6">
-                <select class="form-control" id="sel_Estado">
-                    <option selected="selected">Seleccionar</option>
-                    <option>Última Semana</option>
-                    <option>Último Mes</option>
-                    <option>Último Año</option>
-                </select>
-            </div>
-        </div> 
+        <div class="row pull-right">
+            <form action="filtrar_fecha" class="form-horizontal">
+                <div class="col-sm-8 col-xs-8">
+                    <select class="form-control" id="filtrar_fecha_cotizaciones">
+                        <option selected="selected">Seleccionar</option>
+                        <option>Última Semana</option>
+                        <option>Último Mes</option>
+                        <option>Último Año</option>
+                    </select>
+                </div>
+                <div class="col-sm-4 col-xs-4">
+                    <button type="submit" class="btn btn-default pull-right">Filtrar</button>
+                </div>
+            </form>
+        </div>
+            
     </div>
 
     <div class="container">
@@ -122,19 +128,28 @@
             <h1>Ventas asociadas</h1>
         </div>
     </div>
+    
+
     <div class="container">
-        <div class="row pull-left" style="margin-bottom: 5px;">
-            <label class="control-label col-sm-6" for="sel_Estado">Mostrar:</label>
-            <div class="col-sm-6">
-                <select class="form-control" id="sel_Estado">
-                    <option selected="selected">Seleccionar</option>
-                    <option>Última Semana</option>
-                    <option>Último Mes</option>
-                    <option>Último Año</option>
-                </select>
-            </div>
-        </div> 
+        <div class="row pull-right">
+            <form action="filtrar_fecha" class="form-horizontal">
+                <div class="col-sm-8 col-xs-8">
+                    <select class="form-control" id="filtrar_fecha_cotizaciones">
+                        <option selected="selected">Seleccionar</option>
+                        <option>Última Semana</option>
+                        <option>Último Mes</option>
+                        <option>Último Año</option>
+                    </select>
+                </div>
+                <div class="col-sm-4 col-xs-4">
+                    <button type="submit" class="btn btn-default pull-right">Filtrar</button>
+                </div>
+            </form>
+        </div>
+            
     </div>
+
+
     <div class="container">
         <table class="table table-hover">
             <thead>
